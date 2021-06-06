@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>REGISTER</title>
+	</head>
+		<!--------------- BODY SECTION ------------------->
+		<body style="background-image: url(css2.jpg);text-align: center;font-family: 'Raleway', Helvetica, sans-serif;min-width: 320px;" >
+	    	<h1 style="color: #fff;">Register</h1>
+			<div style="background-color: #fff;margin: 0 auto;border-radius: 20px;width: 75%;max-width: 850px;padding: 10px;padding-top: 20px;">
+				<!---------------- FORM SECTION START ----------------->
+				<form id="survey-form" method="POST" action="">
+					<!----------------- NAME FIELD -------------------->
+					<div class="rowTab">
+						<div style="display: inline-block;text-align: right;width: 20%;padding: 5px;vertical-align: top;margin-top: 10px;">
+							<label id="name-label" for="name">Name: </label>
+						</div>
+						<div  style="display: inline-block;text-align: left;width: 48%;vertical-align: middle;">
+						   <input autofocus type="text" name="name" id="name" placeholder="Enter your name" required style="height: 20px;width: 280px;padding: 5px;margin: 10px;border: 1px solid #c0c0c0;border-radius: 2px;">
+						</div>
+					</div>
+					<!---------------------- /END/ ------------------->
+					<!-------------------- ADDRESS FIELD -------------->
+					<div class="rowTab">
+						<div style="display: inline-block;text-align: right;width: 20%;padding: 5px;vertical-align: top;margin-top: 10px;">
+							<label for="address">Address: </label>
+						</div>
+					    <div style="display: inline-block;text-align: left;width: 48%;vertical-align: middle;">
+							<textarea id="comments" style="height:50px;resize:vertical;width: 280px;padding: 5px;margin: 10px;border: 1px solid #c0c0c0;border-radius: 2px;" name="address"				placeholder="Address"required>	
+							</textarea>
+						</div>
+					</div>
+					<!--------------------- /END/ ---------------------->
+					<!-------------------- PINCODE FIELD ----------------->
+					<div class="rowTab">
+						<div style="display: inline-block;text-align: right;width: 20%;padding: 5px;vertical-align: top;margin-top: 10px;">
+							<label for="pincode">Pincode: </label>
+						</div>
+						<div style="display: inline-block;text-align: left;width: 48%;vertical-align: middle;">
+							<input type="number" name="pincode" id="idpincode" style="height:20px;resize:vertical;width: 280px;padding: 5px;margin: 10px;border: 1px solid #c0c0c0;border-radius: 2px;" placeholder="6 - - - - -" required>
+						</div>
+					</div>
+					<!----------------------- /END/ ---------------------->
+					<!-------------------- EMAIL FIELD -------------------->
+					<div class="rowTab">
+						<div style="display: inline-block;text-align: right;width: 20%;padding: 5px;vertical-align: top;margin-top: 10px;">
+							<label id="email-label" for="email">Email: </label>
+						</div>
+						<div style="display: inline-block;text-align: left;width: 48%;vertical-align: middle;">
+							<input type="email" name="email" id="email" style="height:20px;resize:vertical;width: 280px;padding: 5px;margin: 10px;border: 1px solid #c0c0c0;border-radius: 2px;" 		required placeholder="Enter your Email">
+						</div>
+					</div>
+					<!---------------------- /END/ ---------------------->
+					<!------------------ AGE FIELD ---------------------->
+					<div class="rowTab">
+						<div style="display: inline-block;text-align: right;width: 20%;padding: 5px;vertical-align: top;margin-top: 10px;">
+							<label id="number-label" for="age">Age: </label>
+						</div>
+					    <div style="display: inline-block;text-align: left;width: 48%;vertical-align: middle;">
+						    <input type="number" name="age" id="number" min="1" max="125" style="height:20px;resize:vertical;width: 280px;padding: 5px;margin: 10px;border: 1px solid #c0c0c0;border-radius: 2px;" placeholder="Age" required>
+						</div>
+					</div>
+					<!--------------------- /END/ -------------------------->
+					<!------------------- DOB FIELD ------------------------>
+					<div class="rowTab">
+						<div style="display: inline-block;text-align: right;width: 20%;padding: 5px;vertical-align: top;margin-top: 10px;">
+							<label id="dob-label" for="dob">D.O.B: </label>
+						</div>
+						<div style="display: inline-block;text-align: left;width: 48%;vertical-align: middle;">
+							<input type="date" name="dob" id="iddob" style="height:20px;resize:vertical;width: 280px;padding: 5px;margin: 10px;border: 1px solid #c0c0c0;border-radius: 2px;" required>
+						</div>
+					</div>
+					<!-------------------- /END/ ------------------------>
+					<!----------------- COURSE FIELD -------------------->
+					<div class="rowTab">
+						<div style="display: inline-block;text-align: right;width: 20%;padding: 5px;vertical-align: top;margin-top: 10px;">
+							<label for="department">Course: </label>
+						</div>
+						<!-- /END/ -->
+						<!-- DROP DOWN BOX -->
+						<div style="display: inline-block;text-align: left;width: 48%;vertical-align: middle;">
+							<select id="dropdown" name="department" class="dropdown" style="height: 35px;width: 140px;padding: 5px;margin: 10px;  margin-top: 15px;border: 1px solid #c0c0c0;border-radius: 2px;" required>
+								<option disabled value>Select an option</option>
+								<option value="Course">Course</option>
+								<option value="BCA">BCA</option>
+								<option value="Bsc">BCA</option>
+								<option value="BBA">BBA</option>
+								<option value="B.Tech">B.Tech</option>
+							</select>
+						</div>
+					</div>
+					<!---------------------- /END/ ------------------------->
+					<!------------------- GENDER FILED --------------------->
+					<div class="rowTab">
+						<div style="display: inline-block;text-align: right;width: 20%;padding: 5px;vertical-align: top;margin-top: 10px;">
+							<label for="gender">Gender: </label>
+						</div>						
+						<!----------------- RADIO BUTTONS ----------------->
+						<div style="display: inline-block;text-align: left;width: 48%;vertical-align: middle;">
+							<ul style="list-style: none;">
+								<li class="radio" style=" position: relative;left: -43px;margin-left: 10px;display: block;padding-bottom: 10px;">
+								  <label>
+									<input name="radio-buttons" value="male"  type="radio" class="userRatings" style="float: left;margin-right: 5px;" >Male
+								  </label>
+								</li>
+							    <li class="radio" style=" position: relative;left: -43px;margin-left: 10px;display: block;padding-bottom: 10px;">
+									<label>
+										<input name="radio-buttons" value="female"  type="radio" class="userRatings" style="float: left;margin-right: 5px;">Female
+									</label>
+								</li>
+								<li class="radio" style=" position: relative;left: -43px;margin-left: 10px;display: block;padding-bottom: 10px;">
+									<label>
+										<input name="radio-buttons" value="others"  type="radio" class="userRatings" style="float: left;margin-right: 5px;">Others
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!---------------------- /END/ ------------------------>
+					<!------------------- USERNAME FIELD ------------------->
+					<div class="rowTab">
+						<div style="display: inline-block;text-align: right;width: 20%;padding: 5px;vertical-align: top;margin-top: 10px;">
+							<label id="name-label" for="name">Username: </label>
+						</div>
+						<div style="display: inline-block;text-align: left;width: 48%;vertical-align: middle;">
+						    <input  type="text" name="uname" id="name" style="height:20px;resize:vertical;width: 280px;padding: 5px;margin: 10px;border: 1px solid #c0c0c0;border-radius: 2px;"				placeholder="Username" required >
+						</div>
+					</div>
+					<!---------------------- /END/ --------------------->
+					<!------------------ PASSWORD FIELD ---------------->
+					<div class="rowTab">
+						<div style="display: inline-block;text-align: right;width: 20%;padding: 5px;vertical-align: top;margin-top: 10px;">
+							<label id="name-label" for="name">Password: </label>
+						</div>
+						<div style="display: inline-block;text-align: left;width: 48%;vertical-align: middle;">
+						    <input  type="password" name="pwd" id="pwd" style="height:20px;resize:vertical;width: 280px;padding: 5px;margin: 10px;border: 1px solid #c0c0c0;border-radius: 2px;" 		placeholder="Password" required>
+						</div>
+					</div>
+					<!-------------------- /END/ ----------------------->
+					<!-------------- CONFIRM PASSWORD FIELD --------------->
+					<div class="rowTab">
+						<div style="display: inline-block;text-align: right;width: 20%;padding: 5px;vertical-align: top;margin-top: 10px;">
+							<label id="name-label" for="name">Confirm Password: </label>
+						</div>
+						<div style="display: inline-block;text-align: left;width: 48%;vertical-align: middle;">
+						    <input  type="password" name="cpwd" id="cpwd" style="height:20px;resize:vertical;width: 280px;padding: 5px;margin: 10px;border: 1px solid #c0c0c0;border-radius: 2px;" placeholder="Password" required>
+						</div>
+					</div>
+					<!------------------ /END/ ---------------------->
+					<!------------- SUBMIT AND REST ---------------->
+					<input type="submit" name="submit" value="Submit" id="submit" style=" background-color: green;border-radius: 4px;color: white;font-size: 1em;height: 40px;width: 96px;margin: 10px;border: 0px solid;">
+					<input type="reset" name="reset" value="Reset" id="reset" style="background-color: #1a8cff;border-radius: 4px;color: white;font-size: 1em;height: 40px;width: 96px;margin: 10px;border: 0px solid;"> 
+					<!------------------ /END/ --------------------> 
+			    </form>
+			    <!---------------------------- END OF FORM ---------------------------->
+			</div>
+	 </body>
+	<!------------------------------------- END OF BODY -------------------------------------->
+</html>
