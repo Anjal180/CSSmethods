@@ -2,7 +2,8 @@
 /*---------------BODY---------------*/
 html,
 body {
-  background-color: #000;
+  background-image: url(css1.jpg);
+  background-position: cover;
   text-align: center;
   font-family: 'Raleway', Helvetica, sans-serif;
   min-width: 320px;
@@ -47,10 +48,6 @@ color: #fff;
   border: 1px solid #c0c0c0;
   border-radius: 2px;
 }
-
-/*#userAge {
-  width: 40px;
-}*/
 /*----CHECKBOX AND RADIO BUTTON----*/
 .userRatings,
 input[type="checkbox"] {
